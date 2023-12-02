@@ -1,10 +1,12 @@
 import React from 'react';
-import {useState} from "react";
+import Button from './Button.jsx';
+import Header from './Header.jsx';
 
 export default function App(){
     return(
-        <div>
-            <p1> This is a test. Does it work??  </p1>
-        </div>
+        <>
+            <Header />
+            <Button /> 
+        </>
     )
 }
