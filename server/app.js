@@ -7,6 +7,7 @@ const port = 3000;
  
 const homePage = readFileSync('./public/index.html');
 const scriptLoad = readFileSync('./dist/main.js'); 
+const style = readFileSync('./src/assets/styles/style.css'); 
 
 const server = http.createServer((req, res) => {
     const url = req.url
@@ -14,6 +15,12 @@ const server = http.createServer((req, res) => {
         res.writeHead(200, {'content-type':'text/html'}); 
         res.write(homePage); 
         console.log('home page found');
+        res.end(); 
+    }
+    else if(url === '/src/assets/styles/style.css'){
+        console.log('stylesheet found'); 
+        res.writeHead(200, {'content-type':'text/css'});
+        res.write(style);
         res.end(); 
     }
     else if(url === '/dist/main.js'){
