@@ -7,11 +7,8 @@ export default function Header(){
                 <div className="nav-center">
                     <div className="nav-links">
                         <div>
-                            <a href="https://www.w3schools.com/html/"> Color Flipper </a>
-                        </div>
-                        <div>
-                            <a href="https://www.w3schools.com/html/"> Color Flipper </a>
-                        </div>
+                            <h1> Color Flipper </h1>
+                        </div> 
                     </div>
                 </div>
             </nav>
